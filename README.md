@@ -48,6 +48,8 @@
 - Use database migration files to maintain database schema.
 - Set up associations between models.
 - Use Active Record methods to query the database.
+- Use validations for models.
+- Write unit tests for models.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -153,8 +155,8 @@ Example commands:
 - [x] Create models for all entities in the ERD.
 - [x] Use models to insert data.
 - [x] Create custom method.
-- [ ] Add validations for models.
-- [ ] Write unit tests for models.
+- [x] Add validations for models.
+- [x] Write unit tests for models.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
