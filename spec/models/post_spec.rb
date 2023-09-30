@@ -12,7 +12,16 @@ RSpec.describe Post, type: :model do
 
     it 'Title should have a maximum length of 250' do
       post.title = '
-      Radiohead are an English rock band formed in Abingdon, Oxfordshire, in 1985. The band consists of Thom Yorke (vocals, guitar, piano, keyboards); the brothers Jonny Greenwood (guitar, keyboards, other instruments) and Colin Greenwood (bass); Ed O\'Brien (guitar, backing vocals); and Philip Selway (drums, percussion). They have worked with the producer Nigel Godrich and the cover artist Stanley Donwood since 1994. Radiohead\'s experimental approach is credited with advancing the sound of alternative rock.
+      Radiohead are an English rock band formed in Abingdon,
+      Oxfordshire, in 1985. The band consists of Thom Yorke
+      (vocals, guitar, piano, keyboards); the brothers Jonny
+      Greenwood (guitar, keyboards, other instruments)
+      and Colin Greenwood (bass); Ed O\'Brien (guitar,
+      backing vocals); and Philip Selway (drums, percussion).
+      They have worked with the producer Nigel Godrich and
+      the cover artist Stanley Donwood since 1994.
+      Radiohead\'s experimental approach is credited with
+      advancing the sound of alternative rock.
       '
       expect(post).to_not be_valid
     end
@@ -30,6 +39,5 @@ RSpec.describe Post, type: :model do
       expect(post.comments_counter).to eq(0)
       expect(post.likes_counter).to eq(0)
     end
-
   end
 end
